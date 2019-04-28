@@ -15,6 +15,7 @@ function Add_Train() {
     var dest = document.querySelector('#train_destination').value;
     var freq = document.querySelector('#train_frequency').value;
     var starttime = document.querySelector('#train_time').value;
+    event.preventDefault();
     if (name == "") {
       alert("Name must be filled out");
       return false;
@@ -43,6 +44,7 @@ function Add_Train() {
     else {
         console.log(starttime);
     }
+
     //Create a tr element
     let telem = document.createElement("tr");
     let tname = document.createElement("td");
